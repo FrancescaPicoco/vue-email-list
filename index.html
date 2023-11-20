@@ -17,10 +17,16 @@
 </head>
 <body>
     <div id="app">
+
         <div id="container">
             <button @click="generatoreEmail()">genera</button>
-            <h1>{{mailsArray}}</h1>
-        </div>                
+            <ul>
+                <li v-for ="(i) in mailsArray">
+                    {{mailsArray}}
+                </li>
+            </ul>
+        </div>  
+
     </div>   
     <script src="main.js"></script>
 </body>
