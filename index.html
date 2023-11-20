@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!--STYLE-->
+    <link rel="stylesheet" href="style.css">
+    <!--VUE-->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!--AXIOS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div id="container">
+            <button @click="generatoreEmail()">genera</button>
+            <h1>{{mailsArray}}</h1>
+        </div>                
+    </div>   
+    <script src="main.js"></script>
+</body>
+</html>
