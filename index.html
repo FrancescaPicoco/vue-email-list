@@ -21,8 +21,8 @@
         <div id="container">
             <button @click="generatoreEmail()">genera</button>
             <ul>
-                <li v-for ="(i) in mailsArray">
-                    {{mailsArray}}
+                <li v-for ="(mail , i) in mailsArray">
+                    {{mail}}
                 </li>
             </ul>
         </div>  
