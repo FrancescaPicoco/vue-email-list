@@ -14,7 +14,10 @@ const emails = {
                 axios.get('https://flynn.boolean.careers/exercises/api/random/mail').then(resp => {
                 console.log(resp.data.response)               
                 let singleEmail = resp.data.response;
-				this.mailsArray.push(singleEmail);
+                if (this.mailsArray.length < 10) {
+                    this.mailsArray.push(singleEmail);
+                }
+				
             });
             }
             this.mailsOk = true           
